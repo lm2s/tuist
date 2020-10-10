@@ -7,6 +7,7 @@ Please, check out guidelines: https://keepachangelog.com/en/1.0.0/
 ### Added
 
 - Require the `Config.swift` file to be in the Tuist directory [#693](https://github.com/tuist/tuist/issues/693) by [@mollyIV](https://github.com/mollyIV).
+- Add support for appClip [#1854](https://github.com/tuist/tuist/pull/1854) by [@lakpa](https://github.com/lakpa).
 
 ## 1.22.0 - Heimat
 
@@ -22,11 +23,11 @@ Please, check out guidelines: https://keepachangelog.com/en/1.0.0/
 
 ### Added
 
-- Add support for appClip https://github.com/tuist/tuist/pull/1854 by @lakpa
+- Allow ignoring cache when running tuist focus [#1879](https://github.com/tuist/tuist/pull/1879) by [@natanrolnik](https://github.com/natanrolnik).
 
 ### Changed
 
-- Improve error message to have more actionable information [#921](https://github.com/tuist/tuist/issues/921) by by [@mollyIV](https://github.com/mollyIV).
+- Improve error message to have more actionable information [#921](https://github.com/tuist/tuist/issues/921) by [@mollyIV](https://github.com/mollyIV).
 
 ### Fixed
 
