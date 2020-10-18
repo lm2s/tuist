@@ -17,6 +17,10 @@ protocol AsyncQueuePersisting {
     /// Deletes the given event from disk.
     /// - Parameter event: Event to be deleted.
     func delete<T: AsyncQueueEvent>(event: T) -> Completable
+
+    /// Deletes the given file name from disk.
+    /// - Parameter filename: Name of the file to be deleted.
+    func delete(filename: String) -> Completable
 }
 
 final class AsyncQueuePersistor: AsyncQueuePersisting {
@@ -48,7 +52,7 @@ final class AsyncQueuePersistor: AsyncQueuePersisting {
     func delete<T: AsyncQueueEvent>(event: T) -> Completable {
         delete(filename: filename(event: event))
     }
-
+    
     func delete(filename: String) -> Completable {
         Completable.create { (observer) -> Disposable in
             let path = self.directory.appending(component: filename)
